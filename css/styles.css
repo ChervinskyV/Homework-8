@@ -1,0 +1,48 @@
+:root {
+  --main-font: 'Montserrat';
+  --secondary-font: 'Amita';
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+  outline: 0px;
+}
+html {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--main-font);
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
